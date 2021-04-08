@@ -1,14 +1,18 @@
 import math
 
-
+#This function can be called in another program.
 def trig():
+
+    #i input determines which function the module will call. 
     i = input('To calculate the secant press 1, for cosecant press 2, for cotangent press 3: ')
     if i == '1':
         
+        # q input determines if the user wants to find the secant/cosecant/cotangent with an angle or the sides. 
         q = input('To calculate the secant using the angle press 1, for sides press 2: ')
 
         if q == '1':
 
+            #angle is passed to the function, this angle will then be converted to the secant/cosecant/cotangent 
             angle = float(input('Enter the angle: '))
 
             def secant(angle):
@@ -19,6 +23,7 @@ def trig():
 
         elif q == '2':
 
+            #if the user is using the sides to calculate the secant etc, then they will be asked to input the relevant sides which will then be passed to the function
             hyp = float(input('Enter the hypotenuse: '))
             adj = float(input('Enter the adjacent: '))
 
@@ -76,4 +81,3 @@ def trig():
                 print('The cotangent angle of the triangle with the adjacent of %s and the opposite of %s is: %s degrees' % (adj, opp, r))
             cotangent_sides(adj,opp)
 
-trig()
