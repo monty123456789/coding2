@@ -2,6 +2,7 @@ import math
 
 #This function can be called in another program.
 def trig():
+    
 
     #i input determines which function the module will call. 
     i = input('To calculate the secant press 1, for cosecant press 2, for cotangent press 3: ')
